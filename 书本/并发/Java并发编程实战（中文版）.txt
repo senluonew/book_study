@@ -14132,7 +14132,7 @@ Counter 是线程安全的，并且在没有竞条的情况下能运行得很好
 发访问。在早期的处理器中支持原子的测试并设置 ( Testrand-Set)，获取并递增(Fetch-and-
 Imcrement 以及交换 (Swap) 等指令，这些指令是以实现各种互斥体，而这些互斥体又可以实
 现一些更复杂的并发对象。现在，几乎所有的现代处理器中都包含了某种形式的原子读-改-
-写指令，例如比较并交换( Compare-and-Swap) 或者关联机载/条件存储 (Load-Linked/Store-
+写指令，比较并交换(例如 Compare-and-Swap) 或者关联机载/条件存储 (Load-Linked/Store-
 Conditional)。操作系统和JVM 使用这些指令来实现锁和并发的数据结构，但在 Java 5.0 之前，
 在 Java 类中还不能直接使用这些指令。
 
